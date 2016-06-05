@@ -107,27 +107,6 @@ module.exports = function (grunt) {
       }
     },
 
-    jscs: {
-      options: {
-        config: 'js/.jscsrc'
-      },
-      grunt: {
-        src: ['Gruntfile.js', 'grunt/*.js']
-      },
-      core: {
-        src: 'js/src/*.js'
-      },
-      test: {
-        src: 'js/tests/unit/*.js'
-      },
-      assets: {
-        options: {
-          requireCamelCaseOrUpperCaseIdentifiers: null
-        },
-        src: ['docs/assets/js/src/*.js', 'docs/assets/js/*.js', '!docs/assets/js/*.min.js']
-      }
-    },
-
     stamp: {
       options: {
         banner: '<%= banner %>\n<%= jqueryCheck %>\n<%= jqueryVersionCheck %>\n+function ($) {\n',
